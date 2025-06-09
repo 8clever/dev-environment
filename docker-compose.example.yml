@@ -1,0 +1,23 @@
+services:
+
+  service:
+    build: 
+      args:
+        - GITHUB_URL=git@github.com:YOUR_LOGIN/service.git
+      context: .
+      dockerfile: ./dockerfiles/node/Dockerfile
+    entrypoint:
+      - sleep
+      - infinity
+
+  postgres:
+    image: postgres:alpine
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+
+volumes:
+  pg-data:
+    name: pg-data
+    external: true
