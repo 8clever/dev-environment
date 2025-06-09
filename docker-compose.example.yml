@@ -5,7 +5,7 @@ services:
       args:
         - GITHUB_URL=git@github.com:YOUR_LOGIN/service.git
       context: .
-      dockerfile: ./dockerfiles/node/Dockerfile
+      dockerfile: ./dockerfiles/node-container/Dockerfile
     entrypoint:
       - sleep
       - infinity
