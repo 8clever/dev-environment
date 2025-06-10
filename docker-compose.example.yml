@@ -6,6 +6,8 @@ services:
         - GITHUB_URL=git@github.com:YOUR_LOGIN/service.git
       context: .
       dockerfile: ./dockerfiles/node-container/Dockerfile
+    volumes:
+      - "//var/run/docker.sock:/var/run/docker.sock"
     entrypoint:
       - sleep
       - infinity
