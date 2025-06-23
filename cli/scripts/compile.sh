@@ -1,1 +1,0 @@
-pyinstaller cli.main --onefile

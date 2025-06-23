@@ -19,11 +19,8 @@ Requirements:
 For usage copy this repository to your hard drive and then use CLI or manually create **docker-compose.yml**. For refference use **docker-compose.example.yml**. 
 Then just up your environment ```docker compose up [env] -d``` and attach **vscode** to container
 
-##  CLI
-For use cli run `./exec/bin.sh` and follow prompts suggestions
-
-Requirements:
-- **Python3**
+##  CLI [Windows]
+For use cli run `./exec/bin/main.exe` and follow prompt suggestions
 
 Commands:
 - **add** - add dev enviroment

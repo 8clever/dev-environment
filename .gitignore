@@ -1,4 +1,7 @@
 .ssh
 .venv
+build
+dist
 docker-compose.yml
 __pycache__
+*.spec
