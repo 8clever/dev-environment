@@ -1,0 +1,3 @@
+pip3 install \
+  pyyaml==6.0.2 \
+  pyinstaller==4.5.1
