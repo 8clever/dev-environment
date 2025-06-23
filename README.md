@@ -1,4 +1,4 @@
-# Dev Environments
+# Dev Environments [Beta]
 Create **docker-compose.yml** file with dev environments
 
 Supported environments:
@@ -14,6 +14,10 @@ Supported environments:
 
 Requirements:
 - **Docker Engine**
+- **Dev Containers [VSCode extension]**
+
+For usage copy this repository to your hard drive and then use CLI or manually create **docker-compose.yml**. For refference use **docker-compose.example.yml**. 
+Then just up your environment ```docker compose up [env] -d``` and attach **vscode** to container
 
 ##  CLI
 For use cli run `./exec/bin.sh` and follow prompts suggestions
