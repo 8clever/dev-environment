@@ -6,4 +6,3 @@ if [ -z "$@" ]; then
 else
   python3 -m cli.$@
 fi
-
