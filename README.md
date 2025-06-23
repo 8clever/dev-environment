@@ -26,3 +26,15 @@ Commands:
 - **add** - add dev enviroment
 - **list** - list dev environments in your compose file
 - **rm** - remove dev environment from your compose file
+
+## Access to Private Repositories
+
+Drop `.ssh` folder with private keys to root folder, this folder will directly copied to container and container will fully access private repositories or hostings
+
+## Support
+
+If you have any questions or you have feature suggestion feel free to write issue
+
+## Future Updates
+- GUI
+- Portable Version
