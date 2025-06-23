@@ -1,0 +1,14 @@
+# ENVS
+# $APP - folder path
+# $IMAGE - dockerfile folder name
+
+$APP:
+  build:
+    context: .
+    dockerfile: ./dockerfiles/$IMAGE/Dockerfile
+  volumes:
+    - "../$APP:/app"
+    - "//var/run/docker.sock:/var/run/docker.sock"
+  entrypoint:
+    - sleep
+    - infinity 
