@@ -31,7 +31,7 @@ Commands:
 
 Drop `.ssh` folder with private keys to root folder, this folder will directly copied to container and container will fully access private repositories or hostings
 
-## Support
+## Maintenance
 
 If you have any questions or you have feature suggestion feel free to write issue
 
