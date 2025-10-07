@@ -1,5 +1,5 @@
 import yaml
-from cli.utils.input_select import input_select
+from utils.input_select import input_select
 
 root_compose = 'docker-compose.yml'
 

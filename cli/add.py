@@ -1,7 +1,7 @@
 import yaml
 import os
-import cli.utils.create_root
-from cli.utils.input_select import input_select
+import utils.create_root
+from utils.input_select import input_select
 
 def add_app (image: str):
   app = {
