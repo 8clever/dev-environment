@@ -56,15 +56,17 @@ def add_container_app (app_name: str, github_url: str, image: str):
 
 root_compose = 'docker-compose.yml'
 
+image_type = input_select("Select image type", [ 'container', 'fs' ])
+
 images = os.listdir('dockerfiles')
 image_input = input_select("Select image", images)
 
 app = dict()
-if "fs" in image_input:
+if image_type == 'fs':
   folder_name = input("Fill folder name workspace: ")
   app = add_fs_app(folder_name, image_input)
 
-elif "container" in image_input:
+elif image_type == 'container':
   app_name = input('Fill App name: ')
   github_url = input("Fill github repository url: ")
   app = add_container_app(app_name, github_url, image_input)
